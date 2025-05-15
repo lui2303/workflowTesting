@@ -9,12 +9,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build with Gradle
-        run: gradle build
-
   test:
     runs-on: ubuntu-latest
     steps:
@@ -28,5 +22,5 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Run tests
-        run: ls
+      - name: Run Gradle tests
+        run: .\gradlew test
