@@ -9,6 +9,12 @@ on:
   workflow_dispatch:
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build with Gradle
+        run: gradle build
+
   test:
     runs-on: ubuntu-latest
     steps:
