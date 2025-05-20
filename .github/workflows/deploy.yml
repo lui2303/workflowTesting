@@ -17,6 +17,6 @@ jobs:
       - name: Update App on prod server here via SSH, for now it just runs the main function of the code inside Docker
         uses: ./.github/workflows/docker-action
         with:
-          image_name: test-container
+          image_name: prod-container
           run_container: true
-          dockerfile: 'Dockerfile.dev'
+          dockerfile: 'Dockerfile.prod'

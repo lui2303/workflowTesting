@@ -1,5 +1,5 @@
 
-package com.luiswiederhold;
+package workflowtesting.com.luiswiederhold;
 
 import com.google.gson.Gson;
 

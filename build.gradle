@@ -33,5 +33,5 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'com.luiswiederhold.App'
+    mainClass = 'workflowtesting.com.luiswiederhold.App'
 }
