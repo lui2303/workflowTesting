@@ -8,6 +8,10 @@ inputs:
     description: 'Should the docker container be executed?'
     required: false
     default: 'true'
+  dockerfile:
+    description: 'Name of the Dockerfile'
+    required: false
+    default: 'Dockerfile'
 runs:
   using: composite
   steps:
@@ -15,7 +19,7 @@ runs:
       uses: docker/setup-buildx-action@v3
 
     - name: Build docker image
-      run: docker build -t ${{inputs.image_name}} .
+      run: docker build -f ${{Dockerfile}} -t ${{inputs.image_name}} .
       shell: bash
 
     - name: Run Docker container
