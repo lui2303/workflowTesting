@@ -19,4 +19,4 @@ jobs:
         with:
           image_name: test-container
           run_container: true
-          dockerfile: Dockerfile.dev
+          dockerfile: 'Dockerfile.dev'
